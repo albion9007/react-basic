@@ -8,6 +8,7 @@ import "./App.css";
 import AppContext from "./contexts/AppContext";
 // 孫コンポーネントのCを呼び出すために、まず子コンポーネントのBをimportする。
 import B from "./components/B";
+import BasicReducer from "./components/BasicReducer";
 
 function App() {
   return (
@@ -24,7 +25,8 @@ function App() {
           {/* <TimerContainer /> */}
           {/* <ApiFetch /> */}
           {/* <ApiFetch2 /> */}
-          <B />
+          {/* <B /> */}
+          <BasicReducer />
         </header>
       </div>
     </AppContext.Provider>
