@@ -6,7 +6,7 @@ import "./App.css";
 // import ApiFetch from "./components/ApiFetch";
 // import ApiFetch2 from "./components/ApiFetch2";
 import AppContext from "./contexts/AppContext";
-import CompB from "./components/CompB";
+// import CompB from "./components/CompB";
 // 孫コンポーネントのCを呼び出すために、まず子コンポーネントのBをimportする。
 // import B from "./components/B";
 // import BasicReducer from "./components/BasicReducer";
@@ -14,6 +14,7 @@ import CompB from "./components/CompB";
 // 親コンポーネントでinitialStateとreducerが使える様にするため、
 // useReducerをimportし、initialStateとreducerを定義する。
 import { useReducer } from "react";
+import Memo from "./components/Memo";
 
 const initialState = 0;
 
@@ -57,8 +58,9 @@ function App() {
           {/* <B /> */}
           {/* <BasicReducer /> */}
           {/* 親のコンポーネントでグローバルにしていくcountステートを表示させる様にしていく。 */}
-          Count {count}
-          <CompB />
+          {/* Count {count}
+          <CompB /> */}
+          <Memo />
         </header>
       </div>
     </AppContext.Provider>
